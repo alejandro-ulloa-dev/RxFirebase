@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Arnaud Dorgans' => 'arnaud.dorgans@gmail.com' }
     s.source           = { :git => 'https://github.com/RxSwiftCommunity/RxFirebase.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-    s.ios.deployment_target = '10.0'
+    s.ios.deployment_target = '13.0'
     s.osx.deployment_target = '10.12'
     s.tvos.deployment_target = '10.0'
     s.static_framework = true
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
         functions.source_files = 'Sources/Core/Functions.swift'
     end
     s.subspec 'Auth' do |auth|
-        auth.dependency 'RxFirebaseAuthentication', '~> 0.3'
+        auth.dependency 'RxFirebaseAuthentication', :git => 'https://github.com/alejandro-ulloa-dev/RxFirebaseAuth.git'
         auth.source_files = 'Sources/Core/Auth.swift'
     end
 end
