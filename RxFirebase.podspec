@@ -54,8 +54,4 @@ Pod::Spec.new do |s|
         functions.dependency 'RxFirebaseFunctions', '~> 0.3'
         functions.source_files = 'Sources/Core/Functions.swift'
     end
-    s.subspec 'Auth' do |auth|
-        auth.dependency 'RxFirebaseAuthentication', :git => 'https://github.com/alejandro-ulloa-dev/RxFirebaseAuth.git'
-        auth.source_files = 'Sources/Core/Auth.swift'
-    end
 end
